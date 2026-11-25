@@ -1,0 +1,19 @@
+{
+ "Z": 20,
+ "N": 14,
+ "E_engine": -136.6,
+ "Q0_fm2": 170.33,
+ "axis_ratio": 1.31,
+ "alpha_clusters": 3,
+ "alpha_cluster_scores": [
+  1.064,
+  1.069,
+  1.214
+ ],
+ "rms_radius_fm": 3.536,
+ "r_ch_fm": 4.091,
+ "seed": 13,
+ "C_REP": 12.0,
+ "R_EQ": 1.608,
+ "note": "\u5355\u79cd\u5b50\u5f1b\u8c6b, \u5750\u6807\u672a\u5b58\u6863(\u5e8f\u5217\u5316\u4e2d\u65ad), \u6c47\u603b\u6570\u503c\u6765\u81ea\u4f1a\u8bdd\u8f93\u51fa"
+}

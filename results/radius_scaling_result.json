@@ -1,0 +1,12 @@
+{
+ "n_model_pairs": 95,
+ "median_ratio_archived": 0.8151387038860254,
+ "scale_factor_used": 0.794,
+ "inband_0707_130_before": 67.36842105263158,
+ "inband_085_115_before": 30.526315789473685,
+ "inband_085_115_after": 52.63157894736842,
+ "inband_070_130_after": 71.57894736842105,
+ "scaled_median": 1.0266230527531806,
+ "scaled_mean_abs_dev": 0.29416529368165184,
+ "scaled_std": 0.5436908280223278
+}

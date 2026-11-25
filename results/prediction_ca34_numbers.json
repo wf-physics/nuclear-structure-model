@@ -1,0 +1,17 @@
+{
+ "model_params_expfit": {
+  "aV": 15.4082,
+  "aS": 16.7997,
+  "aC": 0.6947,
+  "aA": 22.4293,
+  "aP": 11.6758,
+  "C_shell": 3.52
+ },
+ "n_fit_experimental": 2484,
+ "sigma_local_Z16_24_N8_20": 1.547,
+ "B34Ca_pred_MeV": 244.07,
+ "fusion_Q_9C_25Si": 18.03,
+ "fusion_Q_10C_24Si": 11.74,
+ "S2p_ET_34Ca_to_32Ar": 2.33,
+ "Sp_model_34Ca_to_33K": 0.33
+}

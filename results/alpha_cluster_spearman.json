@@ -1,0 +1,64 @@
+{
+ "spearman_ratio_vs_A": {
+  "r": -0.6031483057987304,
+  "p": 0.0648985862167009,
+  "n": 10
+ },
+ "spearman_count_vs_A": {
+  "r": 0.7927558473610427,
+  "p": 0.006231703605896942,
+  "n": 10
+ },
+ "per_nucleus": [
+  {
+   "A": 4,
+   "alpha_n": 1,
+   "alpha_ideal": 1
+  },
+  {
+   "A": 8,
+   "alpha_n": 1,
+   "alpha_ideal": 2
+  },
+  {
+   "A": 12,
+   "alpha_n": 2,
+   "alpha_ideal": 3
+  },
+  {
+   "A": 16,
+   "alpha_n": 2,
+   "alpha_ideal": 4
+  },
+  {
+   "A": 20,
+   "alpha_n": 4,
+   "alpha_ideal": 5
+  },
+  {
+   "A": 24,
+   "alpha_n": 4,
+   "alpha_ideal": 6
+  },
+  {
+   "A": 28,
+   "alpha_n": 4,
+   "alpha_ideal": 7
+  },
+  {
+   "A": 32,
+   "alpha_n": 3,
+   "alpha_ideal": 8
+  },
+  {
+   "A": 36,
+   "alpha_n": 3,
+   "alpha_ideal": 9
+  },
+  {
+   "A": 40,
+   "alpha_n": 5,
+   "alpha_ideal": 10
+  }
+ ]
+}

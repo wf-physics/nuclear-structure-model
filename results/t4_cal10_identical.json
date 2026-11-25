@@ -1,0 +1,8 @@
+{
+ "n_seeds": 30,
+ "seeds_identical": 30,
+ "mean_ameerr": 0.6673684210526318,
+ "mean_03": 0.6673684210526318,
+ "equal_2dp": true,
+ "explanation": "AMEerr 中位 ~keV 级, thr=sig_k·ERR 两口径均远小于 MeV 级 Q 差分 → 开道判定逐核几乎一致; 30 seeds 拟合 rng 序列相同 → 准确率逐 seed 相同, 66.74% 两位小数重合为结构性结果而非复制错误"
+}

@@ -1,0 +1,13 @@
+{
+ "frdm_nuclides": 9318,
+ "paper_set_A40_240": {
+  "n_common": 2910,
+  "MAE": 0.4491,
+  "RMS": 0.6308
+ },
+ "full_set_Age16": {
+  "n_common": 3456,
+  "MAE": 0.6031,
+  "RMS": 0.9883
+ }
+}
