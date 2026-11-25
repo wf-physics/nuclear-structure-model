@@ -6,12 +6,12 @@ message: >-
   geometric observables validation (H to Ca), decay-mode decision layer and
   the differential Q-value formula family (F1-F4).
 authors:
-  - family-names: "(填作者姓名)"
-    given-names: ""
-version: v1.0-paperA
-date-released: "2026-11-22"
+  - family-names: "Wang"
+    given-names: "Feng"
+version: v1.0.0
+date-released: "2026-11-25"
 license: MIT
-repository-code: "https://github.com/(用户名)/nuclear-bond-network (推送后填写)"
+repository-code: "https://github.com/wf-physics/nuclear-structure-model"
 keywords:
   - nuclear structure
   - nuclear matter
