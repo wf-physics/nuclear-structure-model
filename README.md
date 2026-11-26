@@ -82,17 +82,17 @@ MIT（见 LICENSE）
 | 2811 核素 B(A,Z) MAE 12.64 / 分区 6.48/9.30/14.33（§4） | DeepSeek 重标闭式对照（`src/q_formula_v5.py` 内嵌系数） | `results/q_formula_v5_meta.json` |
 | 路线二四系数 a_v=13.851/a_s=1.592/a_c=0.7265/a_sym=19.50（§4） | `src/q_formula_v4.py` | `results/model_drop_coef.json` |
 | F1 S_n 85 核 MAE 1.58（59 过/25 半/1 不过） | `src/f1_expanded.py` | `results/f1_expanded_85.json` |
-| F2 Q_β MAE 3.80（Lane 采纳）（Paper B §4） | `src/q_formula_v6_f2patch.py` | `results/q_formula_v6_f2_patch.json` |
-| F3 Q_α MAE 1.32 / F4 Q_fs 5/5 MAE 3.83（Paper B §5–6） | `src/q_formula_v4.py` / `src/q_formula_v5.py` | `results/q_formula_v4.json` / `results/q_formula_v5.json` |
-| T4 四口径矩阵 33.93/57.19/66.74/66.74（Paper B §8） | `src/t4_err_sensitivity.py` + `src/t4_cal03_gap.py` | `results/t4_err_sensitivity.json` |
-| T5 壳修正回归 R²=0.978 / 残差 0.41 MeV（Paper B §4） | `src/t5_shell_correlation.py` + `src/t5_expanded.py` | `results/t5_shell_correlation_v3.json` |
+| F2 Q_β MAE 3.80（Lane 采纳）（Paper I §8.2） | `src/q_formula_v6_f2patch.py` | `results/q_formula_v6_f2_patch.json` |
+| F3 Q_α MAE 1.32 / F4 Q_fs 5/5 MAE 3.83（Paper I §8.3–8.4） | `src/q_formula_v4.py` / `src/q_formula_v5.py` | `results/q_formula_v4.json` / `results/q_formula_v5.json` |
+| T4 四口径矩阵 33.93/57.19/66.74/66.74（Paper I §10） | `src/t4_err_sensitivity.py` + `src/t4_cal03_gap.py` | `results/t4_err_sensitivity.json` |
+| T5 壳修正回归 R²=0.978 / 残差 0.41 MeV（Paper I §8.2） | `src/t5_shell_correlation.py` + `src/t5_expanded.py` | `results/t5_shell_correlation_v3.json` |
 | 衰变判定 99.0%（311/314） | `src/baseline_check.py` | `results/baseline_judge.json` |
 | 盲测 P1 97.4±1.1%（Paper C） | `src/blind_test.py` | `results/blind_results.json` |
 | 首轮反应链（H→Ca，206 条链边）78.4%——旧版留档，不作为最终结果 | `src/chain_predict.py` | `results/chain_results.json` |
 | 几何四项（B 69.2% / Q_s 符号 9/13 / r_ch 66% / α 8/10）（§5） | `src/big_validation.py` + `src/geometry_validation.py` | `results/big_validation_table.csv` / `results/geometry_validation.json` |
 | 种子散布（E 3.4% / Q0 std 1154 / α 计数 1–5）（§2.4、§7） | `src/seed_dispersion.py` | `results/seed_dispersion.json` |
-| 阀门验证 33.9/66.7（A≤40 能量侧负结果）（§7 / Paper B §8） | `src/valve_test.py` | `results/valve_test.json` |
-| 配对两路证伪（噪声/信号 ~50×、引擎奇偶缺额 −3.9）（Paper B §4） | `src/q_formula_v6_pairing_v2.py` / `src/q_engine_pairing.py` | `results/pairing_probe_v2.json` / `results/engine_pairing_probe_v2.json` |
+| 阀门验证 33.9/66.7（A≤40 能量侧负结果）（Paper C §4 / Paper I §10） | `src/valve_test.py` | `results/valve_test.json` |
+| 配对两路证伪（噪声/信号 ~50×、引擎奇偶缺额 −3.9）（Paper I §8） | `src/q_formula_v6_pairing_v2.py` / `src/q_engine_pairing.py` | `results/pairing_probe_v2.json` / `results/engine_pairing_probe_v2.json` |
 | 附录 A 汇总表（315 核素 E_model/E_bond/k 分布） | `src/appendixB_export.py` | `results/appendixA_summary.csv` |
 | 附录 B 逐核子表（⁴He/¹⁶O/⁴⁸Ca 正文；全量 203,662 键行补充材料） | `src/appendixB_export.py` | `results/appendixB_{He-4,O-16,Ca-48}.json` / `results/appendixB_all_nucleons.csv` |
 | 全部 9 张图（A-图1…B-图4） | `src/make_figures.py` | `figures/*.png` |
