@@ -8,12 +8,12 @@
 
 | 模块 | 结果 | 基线对照 | 存档 |
 |---|---|---|---|
-| 衰变判定层（A≤40 全量） | **99.0%（311/314）** | 纯 Q 符号基线 92.6%；零结构管线 97.5% | `results/chain_results.json` |
+| 衰变判定层（A≤40 全量） | **99.0%（311/314）** | 纯 Q 符号基线 92.6%；零结构管线 97.5% | `results/baseline_judge.json` |
 | 衰变判定层盲测（30 seeds, P1 协议） | mean 97.4±1.1% / 剔补丁核素 99.2% | 置换对照跌至 30% 以下 | `results/blind_results.json` |
 | 核物质饱和点 | ρ0=0.160 fm⁻³ ✓, E/A=−15.8 MeV ✓ | 经验 0.16 / −15.8 | `nm_formula_v4.json` |
 | K（不可压缩） | 547 MeV（不达标，不预言 GMR——limitation） | 经验 240±30 | 同上 |
 | 金刚石团簇求和 B(A,Z) | 2811 核素 MAE 12.6 MeV（零逐核拟合） | 拟合液滴 RMSE 2–4 | `q_formula_v5_meta.json` |
-| F1 S_n 闭式（A≥40, 85 核扩样） | MAE 1.58，零"不过" | — | `f1_expanded_85.json` |
+| F1 S_n 闭式（A≥40, 85 核扩样） | MAE 1.58（59 过/25 半/1 不过） | — | `f1_expanded_85.json` |
 | F3 Q_α（A≥180） | MAE 1.32 MeV | — | `q_formula_v4.json` |
 | F4 Q_fs 裂变释放能 | MAE 3.83 MeV，5/5 过（判定带 20%·Q≈35 MeV） | — | `q_formula_v5.json` |
 | F2 Q_β⁻ | MAE 3.80（Lane 基座），−3~−9 系统负偏（壳效应，limitation） | — | `q_formula_v6_f2_patch.json` |
@@ -81,13 +81,14 @@ MIT（见 LICENSE）
 | 金刚石四键网络 120 组有效解（§3 表） | `src/nm_formula_v4.py` | 同上 |
 | 2811 核素 B(A,Z) MAE 12.64 / 分区 6.48/9.30/14.33（§4） | DeepSeek 重标闭式对照（`src/q_formula_v5.py` 内嵌系数） | `results/q_formula_v5_meta.json` |
 | 路线二四系数 a_v=13.851/a_s=1.592/a_c=0.7265/a_sym=19.50（§4） | `src/q_formula_v4.py` | `results/model_drop_coef.json` |
-| F1 S_n 85 核 MAE 1.58（59 过/25 半/1 不过）（Paper B §3） | `src/f1_expanded.py` | `results/f1_expanded_42.json` |
+| F1 S_n 85 核 MAE 1.58（59 过/25 半/1 不过） | `src/f1_expanded.py` | `results/f1_expanded_85.json` |
 | F2 Q_β MAE 3.80（Lane 采纳）（Paper B §4） | `src/q_formula_v6_f2patch.py` | `results/q_formula_v6_f2_patch.json` |
 | F3 Q_α MAE 1.32 / F4 Q_fs 5/5 MAE 3.83（Paper B §5–6） | `src/q_formula_v4.py` / `src/q_formula_v5.py` | `results/q_formula_v4.json` / `results/q_formula_v5.json` |
 | T4 四口径矩阵 33.93/57.19/66.74/66.74（Paper B §8） | `src/t4_err_sensitivity.py` + `src/t4_cal03_gap.py` | `results/t4_err_sensitivity.json` |
 | T5 壳修正回归 R²=0.978 / 残差 0.41 MeV（Paper B §4） | `src/t5_shell_correlation.py` + `src/t5_expanded.py` | `results/t5_shell_correlation_v3.json` |
-| 衰变判定 99.0%（311/314）与盲测 P1 97.4（Paper C） | `src/blind_test.py` | `results/blind_results.json` |
-| 反应链 99.0%（H→Ca 389 核素） | `src/chain_predict.py` | `results/chain_results.json` |
+| 衰变判定 99.0%（311/314） | `src/baseline_check.py` | `results/baseline_judge.json` |
+| 盲测 P1 97.4±1.1%（Paper C） | `src/blind_test.py` | `results/blind_results.json` |
+| 首轮反应链（H→Ca，206 条链边）78.4%——旧版留档，不作为最终结果 | `src/chain_predict.py` | `results/chain_results.json` |
 | 几何四项（B 69.2% / Q_s 符号 9/13 / r_ch 66% / α 8/10）（§5） | `src/big_validation.py` + `src/geometry_validation.py` | `results/big_validation_table.csv` / `results/geometry_validation.json` |
 | 种子散布（E 3.4% / Q0 std 1154 / α 计数 1–5）（§2.4、§7） | `src/seed_dispersion.py` | `results/seed_dispersion.json` |
 | 阀门验证 33.9/66.7（A≤40 能量侧负结果）（§7 / Paper B §8） | `src/valve_test.py` | `results/valve_test.json` |
